@@ -26,47 +26,37 @@
     ],
     "inputs": [
         {
-            "name": "targetType",
-            "type": "radio",
-            "label": "Type",
-            "required": false,
-            "defaultValue": "filePath",
-            "helpMarkDown": "Target script type: File Path or Inline",
-            "options": {
-                "filePath": "File Path",
-                "inline": "Inline"
-            }
+            "name": "yesno",
+            "type": "boolean",
+            "label": "YesNo",
+            "required": true,
+            "defaultValue": "true",
+            "helpMarkDown": "Choose Yes or No"
         },
         {
             "name": "filePath",
             "type": "filePath",
-            "label": "Script Path",
-            "visibleRule": "targetType = filePath",
+            "label": "File Path",
             "required": true,
             "defaultValue": "",
             "helpMarkDown": "Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory)."
         },
         {
-            "name": "arguments",
+            "name": "amount",
             "type": "string",
-            "label": "Arguments",
-            "visibleRule": "targetType = filePath",
-            "required": false,
-            "defaultValue": "",
+            "label": "Amount",
+            "required": true,
+            "defaultValue": "0",
             "helpMarkDown": "Arguments passed to the PowerShell script. Either ordinal parameters or named parameters."
         }
     ],
     "instanceNameFormat": "PowerShell Script",
     "execution": {
         "PowerShell3": {
-            "target": "powershell.ps1",
+            "target": "task.ps1",
             "platforms": [
                 "windows"
             ]
-        },
-        "Node": {
-            "target": "powershell.js",
-            "argumentFormat": ""
         }
     },
     "messages": {
