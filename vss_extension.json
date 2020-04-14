@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
-    "id": "tools",
-    "version": "0.1.0",
-    "name": "Fabrikam Tools",
-    "publisher": "fabrikam",
+    "id": "TCTools",
+    "version": "0.1.1",
+    "name": "Torben Clasen",
+    "publisher": "torbenclasen",
     "description": "Awesome tools to help you and your team do great things everyday.",
     "targets": [
         {
@@ -11,63 +11,30 @@
         }
     ],
     "icons": {
-        "default": "images/fabrikam-logo.png"
-    },
-    "scopes": [
-        "vso.work",
-        "vso.code_write",
-        "vso.build_execute"
-    ],
+        "default": "images/logo.png"
+    }, 
     "categories": [
-        "Azure Boards"
+        "Azure Pipelines"
     ],
     "branding": {
         "color": "rgb(34, 34, 34)",
         "theme": "dark"
     },
-    "content": {
-        "details": {
-            "path": "readme.md"
-        },
-        "license": {
-            "path": "eula.md"
-        }
-    },
-    "links": {
-        "getstarted": {
-            "uri": "https://www.fabrikam-fiber-inc.com/help/getstarted"
-        },
-        "support": {
-            "uri": "https://www.fabrikam-fiber-inc.com/support"
-        }
-    },
-    "repository": {
-        "type": "git",
-        "uri": "https://github.com/fabrikam-fiber-inc/myextension"
-    },
     "contributions": [
         {
-            "id": "showCommits",
-            "type": "ms.vss-web.action",
-            "description": "Adds a menu action from builds grid to show associated items.",
+            "id": "MINTEST",
+            "type": "ms.vss-distributed-task.task",
             "targets": [
-                "ms.vss-build-web.completed-build-menu"
+                "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "title": "View associated items",
-                "uri": "launch.html"
+                "name": "TestTask"
             }
         }
     ],
     "files": [
         {
-            "path": "launch.html",
-            "addressable": true
-        },        
-        {
-            "path": "node_modules/vss-web-extension-sdk/lib",
-            "addressable": true,
-            "packagePath": "lib"
+            "path": "TestTask"
         }
     ]
 }

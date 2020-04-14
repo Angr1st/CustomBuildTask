@@ -3,8 +3,6 @@
     "name": "MINTEST",
     "friendlyName": "MinApp",
     "description": "Test Error Printout and new Powershell Task Handler!",
-    "helpUrl": "https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/powershell",
-    "helpMarkDown": "[Learn more about this task](https://go.microsoft.com/fwlink/?LinkID=613736)",
     "category": "Utility",
     "visibility": [
         "Build",
@@ -17,7 +15,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 1
     },
     "releaseNotes": "TEST",
     "minimumAgentVersion": "2.115.0",
@@ -60,16 +58,7 @@
         }
     },
     "messages": {
-        "GeneratingScript": "Generating script.",
-        "JS_ExitCode": "PowerShell exited with code '%s'.",
-        "JS_FormattedCommand": "Formatted command: %s",
-        "JS_InvalidErrorActionPreference": "Invalid ErrorActionPreference '%s'. The value must be one of: 'Stop', 'Continue', or 'SilentlyContinue'",
-        "JS_InvalidFilePath": "Invalid file path '%s'. A path to a .ps1 file is required.",
-        "JS_Stderr": "PowerShell wrote one or more lines to the standard error stream.",
-        "PS_ExitCode": "PowerShell exited with code '{0}'.",
-        "PS_FormattedCommand": "Formatted command: {0}",
-        "PS_InvalidErrorActionPreference": "Invalid ErrorActionPreference '{0}'. The value must be one of: 'Stop', 'Continue', or 'SilentlyContinue'",
-        "PS_InvalidFilePath": "Invalid file path '{0}'. A path to a .ps1 file is required.",
-        "PS_UnableToDetermineExitCode": "Unexpected exception. Unable to determine the exit code from powershell."
+        "Example1": "Some Message1",
+        "Uff": "Massive Uff"
     }
 }

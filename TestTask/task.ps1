@@ -26,7 +26,7 @@ try {
     # Fail on $LASTEXITCODE
     if ($errorCode -ne 0) {
         $failed = $true
-        Write-VstsTaskError -Message (Get-VstsLocString -Key 'PS_ExitCode' -ArgumentList $errorCode)
+        Write-VstsTaskError -Message (Get-VstsLocString -Key 'Uff')
     }
     
     # Fail if any errors.
