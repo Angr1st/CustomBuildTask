@@ -17,6 +17,10 @@ Have a look at microsofts [tutorial](https://docs.microsoft.com/en-us/azure/devo
 5. Update the [task.ps1](/TestTask/task.ps1) script for your purpose
 6. Replace the icons [here](/images/logo.png) for the extension and [here](/TestTask/icon.png). Both need to be 128x128.
 
+## How to package and publish
+
+You can use the [pack_and_publish.ps1](/pack_and_publish.ps1) script to automate the publishing of your newly created extension. You can also pass in organisation to share your extension with. It will be published private by default.
+
 ## History
 
 After I fixed the ps_module folder structure (removing the 0.11.0 and moving its contents directly into its parent folder) the build task works.
