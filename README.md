@@ -9,12 +9,13 @@ Have a look at microsofts [tutorial](https://docs.microsoft.com/en-us/azure/devo
 ## How To Adapt
 
 1. Update the information inside of the [vss-extension.json](/vss-extension.json)
-2. Update the information inside of the [task.json](https://github.com/Angr1st/CustomBuildTask/blob/master/TestTask/task.json)
+2. Update the information inside of the [task.json](/TestTask/task.json)
 3. Potentially look for an updated version of the [VstsTaskSdk](https://www.powershellgallery.com/packages/VstsTaskSdk) (current: 0.11.0)
    - Replace the content inside of the [VstsTaskSdk-Folder](/TestTask/ps_modules/VstsTaskSdk) with the new content
    - Send me a pr to update this repo 😅
 4. Remove the [MinApp-Folder](/TestTask/MinApp) 
 5. Update the [task.ps1](/TestTask/task.ps1) script for your purpose
+   - Revisit the [task.json](/TestTask/task.json) and make sure your inputs match your VstsInputs
 6. Replace the icons [here](/images/logo.png) for the extension and [here](/TestTask/icon.png). Both need to be 128x128.
 
 ## How to package and publish
