@@ -15,7 +15,7 @@ Have a look at microsofts [tutorial](https://docs.microsoft.com/en-us/azure/devo
    - Send me a pr to update this repo 😅
 4. Remove the [MinApp-Folder](/TestTask/MinApp) 
 5. Update the [task.ps1](/TestTask/task.ps1) script for your purpose
-   - Revisit the [task.json](/TestTask/task.json) and make sure your inputs match your VstsInputs
+   - Revisit the [task.json](/TestTask/task.json) and make sure your inputs match your VstsInputs. If you messed this up and you need to do a breaking change (remove an input) then you need to increment the major version of the [task.json](/TestTask/task.json).
 6. Replace the icons [here](/images/logo.png) for the extension and [here](/TestTask/icon.png). Both need to be 128x128.
 
 ## How to package and publish
