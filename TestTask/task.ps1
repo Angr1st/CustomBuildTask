@@ -16,11 +16,13 @@ try {
 
     
     # Run MinApp
-    $process = Start-Process -FilePath "$PSScriptRoot\MinApp\MinApp.exe" -PassThru -NoNewWindow -ArgumentList "--filepath",$filePath,"--yesno",$yesNo,"--amount",$intamount
+    $process = Start-Process -FilePath "$PSScriptRoot\MinApp\MinApp.exe" -PassThru -Wait -NoNewWindow -ArgumentList "--filepath",$filePath,"--yesno",$yesNo,"--amount",$intamount
 
-    $process.WaitForExit()
+    #$process.WaitForExit()
 
     $errorCode = $process.ExitCode
+
+    Write-VstsTaskVerbose -Message $errorCode
 
     $failed = $false
     # Fail on $LASTEXITCODE
