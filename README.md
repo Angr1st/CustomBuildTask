@@ -19,7 +19,7 @@ Have a look at microsofts [tutorial](https://docs.microsoft.com/en-us/azure/devo
 
 ## How to package and publish
 
-You can use the [pack_and_publish.ps1](/pack_and_publish.ps1) script to automate the publishing of your newly created extension. You can also pass in organisation to share your extension with. It will be published private by default.
+You can use the [pack_and_publish.ps1](/pack_and_publish.ps1) script to automate the publishing of your newly created extension. You can also pass in an organisation to share your extension with. It will be published privately by default.
 
 ## History
 
