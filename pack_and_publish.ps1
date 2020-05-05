@@ -6,7 +6,7 @@ param(
 $path = npm prefix -g
 $tfxcli = Join-Path $path "node_modules\tfx-cli\_build\tfx-cli.js"
 
-Invoke-Expression -Command "node $tfxcli extension create --manifest-globs .\vss_extension.json"
+Invoke-Expression -Command "node $tfxcli extension create"
 if ([string]::IsNullOrEmpty($shareWith)) {
     Invoke-Expression -Command "node $tfxcli extension publish -t $patToken"
 }
